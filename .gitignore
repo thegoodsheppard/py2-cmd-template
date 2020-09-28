@@ -1,0 +1,6 @@
+ignore/
+.DS_STORE
+.config.json
+*.pyc
+tempCodeRunnerFile.py
+build/output/
