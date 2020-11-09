@@ -22,6 +22,13 @@ def load_prezipped_config(json_config_file_name):
     with open(config_path) as json_config:
         return json.load(json_config)
 
+      
+def get_config(json_config_file_name):
+    if __file__.endswith('.command/__main__.pyc'):
+        return load_zipped_config(json_config_file_name)
+    else:
+        return load_prezipped_config(json_config_file_name)
+
 
 def main():
     pass
